@@ -7,20 +7,12 @@ echo $google_main > /root/g00g
 echo "nameserver 8.8.8.8" >  /etc/resolv.conf
 echo "nameserver 8.8.4.4" >>  /etc/resolv.conf
 
-cd /headless/SDA_ALL/
-rm -rf site_5
+cd /root/SDA_ALL/
 git reset --hard
 git pull
-cd /headless/SDA_ALL/main_oct0pus/
-
-pwd
-
-rm -rf /root/SDA_ALL
-cd /root/
-
-git clone https://github.com/GH0STAV0/SDA_ALL.git
-
 cd /root/SDA_ALL/main_oct0pus/
+
+
 chmod +x *
 ngrok authtoken $NGROK_TOKENS
 ngrok http 9001 > /dev/null &
@@ -30,6 +22,5 @@ do
 	echo "NEW ..............."
 	dbus-uuidgen > /var/lib/dbus/machine-id
 	cd /root/SDA_ALL/main_oct0pus/
-	# timeout 5m python3 48_ads.py
 	python3 google_let.py
 done
