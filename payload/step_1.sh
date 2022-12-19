@@ -47,7 +47,10 @@ echo " * 3 ------------- > INSTALL geckodriver-v0.32.0 "
 wget -q https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz && tar -xf geckodriver-v0.32.0-linux64.tar.gz
 rm geckodriver-v0.32.0-linux64.tar.gz
 chmod +x geckodriver*
-cp geckodriver* /usr/bin/
+mv geckodriver /usr/bin/geckodriver-30
+https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodriver-v0.25.0-linux64.tar.gz && tar -xf geckodriver-v0.25.0-linux64.tar.gz
+chmod +x geckodriver*
+mv geckodriver* /usr/bin/geckodriver22
 git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
 
 
