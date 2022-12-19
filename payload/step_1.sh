@@ -1,5 +1,5 @@
 echo " * 2 ------------- > INSTALL S -- N -- M "
-git clone https://github.com/GH0STAV0/SDA_ALL.git /root/
+git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
 
 DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         jq \
