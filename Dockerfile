@@ -36,7 +36,7 @@ RUN find $STARTUPDIR -name '*.sh' -exec chmod a+x {} +
 
 RUN apt-get update < /dev/null > /dev/null
 ###########################################################################
-RUN apt-get  install -y openssh-server wget < /dev/null > /dev/null
+RUN apt-get  install -y openssh-server htop wget < /dev/null > /dev/null
 
 ###########################################################################
 RUN $STARTUPDIR/step_1.sh
