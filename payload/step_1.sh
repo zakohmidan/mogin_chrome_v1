@@ -1,5 +1,4 @@
 echo " * 2 ------------- > INSTALL S -- N -- M "
-git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
 
 DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         jq \
@@ -49,6 +48,8 @@ wget -q https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodr
 rm geckodriver-v0.32.0-linux64.tar.gz
 chmod +x geckodriver*
 cp geckodriver* /usr/bin/
+git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
+
 
 
 
