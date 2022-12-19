@@ -1,6 +1,8 @@
 # Great stuff taken from: https://github.com/rastasheep/ubuntu-sshd
 
-FROM ubuntu:18.04
+#FROM ubuntu:18.04
+FROM debian:bullseye
+
 #FROM ubuntu:20.04
 MAINTAINER 0x##Y8H4 Diklic "https://github.com/rastasheep"
 
