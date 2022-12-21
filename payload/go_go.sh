@@ -10,7 +10,7 @@ echo "nameserver 8.8.4.4" >>  /etc/resolv.conf
 cd /root/SDA_ALL/
 git reset --hard
 git pull
-cd /root/SDA_ALL/main_oct0pus/
+cd /root/SDA_ALL/main_oct0pus_van/
 
 
 chmod +x *
@@ -21,6 +21,6 @@ while true
 do
 	echo "NEW ..............."
 	dbus-uuidgen > /var/lib/dbus/machine-id
-	cd /root/SDA_ALL/main_oct0pus/
+	cd /root/SDA_ALL/main_oct0pus_van/
 	python3 google_let.py
 done
