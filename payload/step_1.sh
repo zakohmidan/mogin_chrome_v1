@@ -49,16 +49,17 @@ wget -q https://github.com/thingst0d0/g00rm/raw/main/ocs-url_3.1.0-0ubuntu1_amd6
 echo " * 3 ------------- > INSTALL geckodriver-v0.32.0 "
 wget -q https://github.com/mozilla/geckodriver/releases/download/v0.32.0/geckodriver-v0.32.0-linux64.tar.gz && tar -xf geckodriver-v0.32.0-linux64.tar.gz
 rm geckodriver-v0.32.0-linux64.tar.gz
-chmod +x geckodriver*
+chmod +x geckodriver
 mv geckodriver /usr/bin/geckodriver-30
 wget -q https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodriver-v0.25.0-linux64.tar.gz && tar -xf geckodriver-v0.25.0-linux64.tar.gz
-chmod +x geckodriver*
-mv geckodriver* /usr/bin/geckodriver22
+chmod +x geckodriver
+mv geckodriver /usr/bin/geckodriver22
 wget -q https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz && tar -xf geckodriver-v0.26.0-linux64.tar.gz
-mv geckodriver* /usr/bin/geckodriver-26
+chmod +x geckodriver
+mv geckodriver /usr/bin/geckodriver-26
 git clone https://github.com/GH0STAV0/SDA_ALL.git /root/SDA_ALL
 
 
 
 
-bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chrome-remote-desktop-session'
+#bash -c 'echo \"exec /etc/X11/Xsession /usr/bin/xfce4-session\" > /etc/chrome-remote-desktop-session'
