@@ -10,7 +10,7 @@ MAINTAINER 0x##Y8H4 Diklic "https://github.com/rastasheep"
 RUN echo $V1_NGROK_TOKENS $key002 $Environment_KEY_VAULT $key1
 ENV DISPLAY=:1 \
     NGROK_TOKENS=257VWvy4O16qLnlACoOGlAu69zH_4aaxZwYFpd7YxxeN6RY4W\
-    google_main=test\
+    google_main=bigoctbig\
     VNC_PORT=5901 \
     NO_VNC_PORT=6901 \
     NO_VNC_PORT_A=6080 \
