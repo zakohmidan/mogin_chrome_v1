@@ -65,6 +65,11 @@ EXPOSE 22 9001 9002
 # PLEASE CHANGE THAT AFTER FIRST LOGIN
 RUN echo 'mogenius:mogenius' | chpasswd
 RUN echo "PLEASE CHANGE THAT AFTER FIRST LOGIN"
+RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 test 
+
+RUN  echo 'root:ooop' | chpasswd
+
+RUN service ssh start
 
 #CMD ["/usr/sbin/sshd", "-D", "-e"]
 CMD [ "/usr/bin/supervisord", "-n" , "-c","/etc/supervisor/supervisord.conf" ]
