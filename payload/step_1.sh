@@ -1,11 +1,12 @@
 echo " * 2 ------------- > INSTALL S -- N -- M "
 
 DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
+        apt-utils \
         jq \
         nano \
         psmisc \
         sudo \
-        cron python3-pil \
+        cron python3-pil  \
         software-properties-common python3 python3-dev python3-numpy \
         openvpn autocutsel  python3-pip python3-tk python3-dev  pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor \
