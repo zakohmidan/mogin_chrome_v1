@@ -60,7 +60,7 @@ RUN mkdir /root/.ssh
 RUN apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-EXPOSE 22 9001 9002
+
 
 # PLEASE CHANGE THAT AFTER FIRST LOGIN
 RUN echo 'mogenius:mogenius' | chpasswd
@@ -70,7 +70,7 @@ RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1001 test
 RUN  echo 'root:ooop' | chpasswd
 
 RUN service ssh start
-
+EXPOSE 22 9001 9002
 #CMD ["/usr/sbin/sshd", "-D", "-e"]
 CMD [ "/usr/bin/supervisord", "-n" , "-c","/etc/supervisor/supervisord.conf" ]
 
