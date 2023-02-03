@@ -39,7 +39,7 @@ RUN apt-get update < /dev/null > /dev/null
 RUN apt-get  install -y apt-utils openssh-server htop wget < /dev/null > /dev/null
 
 ###########################################################################
-#RUN $STARTUPDIR/step_1.sh
+RUN $STARTUPDIR/step_1.sh
 #RUN $STARTUPDIR/step_2.sh
 #RUN $STARTUPDIR/ng.sh
 
