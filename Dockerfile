@@ -65,7 +65,7 @@ EXPOSE 22 9001 9002
 # PLEASE CHANGE THAT AFTER FIRST LOGIN
 RUN echo 'mogenius:mogenius' | chpasswd
 RUN echo "PLEASE CHANGE THAT AFTER FIRST LOGIN"
-RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 test 
+RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1001 test 
 
 RUN  echo 'root:ooop' | chpasswd
 
