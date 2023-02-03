@@ -1,5 +1,5 @@
 cd /dockerstartup/
-echo " * 2 ++++++++++++++++++++++++ > DONE !!! S -- N -- M "
+echo " * 2 ++++++++++++++++++++++++ > DONE !!! S2 -- N -- M "
 cd /dockerstartup/
 echo " * 3 ------------- > INSTALL google-chrome " $US_PS
 
