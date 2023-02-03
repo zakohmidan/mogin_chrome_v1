@@ -5,7 +5,7 @@ echo " * 3 ------------- > INSTALL google-chrome " $US_PS
 
 mkdir -p /root/EXTRAT/
 
-#######################################################################################
+####################################################################################
 DEBIAN_FRONTEND=noninteractive apt-get install -y --fix-missing  supervisor
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 
