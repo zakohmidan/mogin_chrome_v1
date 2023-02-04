@@ -71,6 +71,6 @@ RUN  echo 'root:ooop' | chpasswd
 
 RUN service ssh start
 EXPOSE 22 9001 9002
-#CMD ["/usr/sbin/sshd", "-D", "-e"]
+CMD ["/usr/sbin/sshd", "-D", "-e"]
 CMD [ "/usr/bin/supervisord", "-n" , "-c","/etc/supervisor/supervisord.conf" ]
 
